@@ -1,3 +1,7 @@
+mod board;
+
 fn main() {
-    println!("Hello, world!");
+    let board = board::generate_board();
+    let fen = board::generate_fen(&board);
+    println!("{}", fen);
 }
